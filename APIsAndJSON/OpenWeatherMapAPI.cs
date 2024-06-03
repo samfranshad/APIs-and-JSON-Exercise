@@ -32,7 +32,7 @@ namespace APIsAndJSON
 
             var weatherResponse = JObject.Parse(urlResponse)["main"]["temp"].ToString();
 
-            Console.WriteLine($"The current temperature for zip code 48328 is {weatherResponse} degrees Fahrenheit.");
+            Console.WriteLine($"The current temperature for zip code {userZip} is {weatherResponse} degrees Fahrenheit.");
         }
 
     }
